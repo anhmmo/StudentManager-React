@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ScrollToTheTop from './Components/ScrollToTheTop/ScrollToTheTop';
+import StudentPopup from './Components/StudentPopup/StudentPopup';
+import PopupSection from './Components/PopupSection/PopupSection';
+import Container from './Components/Container/Container';
+import GithubLink from './Components/GithubLink/GithubLink';
+import AddFormOpen from './Components/AddFormOpen/AddFormOpen';
+import ColorMenu from './Components/ColorMenu/ColorMenu';
+import RightSetting from './Components/RightSetting/RightSetting';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+                     
+      <ColorMenu />
+                
+      <RightSetting />
+                      
+      <AddFormOpen />
+                 
+      <GithubLink />
+               
+      <Container />
+
+      <PopupSection />
+
+      <StudentPopup /> 
+
+      <ScrollToTheTop />
+            
     </div>
   );
 }
